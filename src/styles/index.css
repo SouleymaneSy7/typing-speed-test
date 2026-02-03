@@ -50,6 +50,11 @@
     0.9286rem + 0.3571vw,
     1.25rem
   ); /* 16px - 20px */
+  --font-size-fluid-xs: clamp(
+    0.625rem,
+    0.5893rem + 0.1786vw,
+    0.75rem
+  ); /* 10px - 12px */
 
   /* Line Height */
   --line-height-tight: 1;
@@ -191,6 +196,22 @@
   font-weight: var(--font-weight-regular);
 }
 
+@utility text-preset-logo-lg {
+  font-size: var(--font-size-fluid-sm);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-none);
+  color: var(--color-neutral-0);
+}
+
+@utility text-preset-logo-sm {
+  font-size: var(--font-size-fluid-xs);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-none);
+  color: var(--color-neutral-400);
+}
+
 /* ============================================
              REUSABLE COMPONENTS
    ============================================ */
@@ -281,8 +302,8 @@ body {
   font-family: var(--font-sans);
   font-size: var(--font-size-base);
   line-height: var(--line-height-normal);
-  color: var(--color-neutral-900);
-  background-color: var(--color-neutral-0);
+  color: var(--color-neutral-0);
+  background-color: var(--color-neutral-900);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
