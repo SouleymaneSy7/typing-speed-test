@@ -4,14 +4,14 @@ import Title from "../common/title";
 import { LogoIcon } from "../icons/icons.component";
 
 export const Logo = () => {
-  const isMobile = useIsMobile(400);
+  const isMobile = useIsMobile(550);
 
   return (
-    <Container className="flex items-start gap-125">
+    <Container className="gap-space-125 flex max-w-66.75 items-center">
       <LogoIcon />
 
       {!isMobile ? (
-        <Container className="flex flex-col gap-1">
+        <Container className="gap-space-50 flex flex-col">
           <Title level="h2" className="text-preset-logo-lg">
             Typing Speed Test
           </Title>
