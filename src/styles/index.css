@@ -113,6 +113,9 @@
   --breakpoint-lg: 64rem;
   --breakpoint-xl: 80rem;
   --breakpoint-2xl: 96rem;
+
+  /* Container */
+  --container: 77.5rem;
 }
 
 /* ============================================
@@ -210,6 +213,14 @@
   line-height: var(--line-height-normal);
   letter-spacing: var(--letter-spacing-none);
   color: var(--color-neutral-400);
+}
+
+/* ============================================
+             CONTAINER - UTILITIES
+   ============================================ */
+
+@utility container {
+  @apply mx-auto max-w-(--container) px-5 lg:px-8;
 }
 
 /* ============================================
