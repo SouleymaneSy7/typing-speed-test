@@ -267,17 +267,17 @@
   .btn-secondary:focus {
     outline: none;
     box-shadow:
-      0 0 0 3px var(--color-neutral-900),
-      0 0 0 5px var(--color-blue-600);
+      0 0 0 0.1875rem var(--color-neutral-900),
+      0 0 0 0.3125rem var(--color-blue-600);
   }
 
   .btn-secondary:focus-visible {
-    outline: 3px solid var(--color-blue-600);
-    outline-offset: 3px;
+    outline: 0.1875rem solid var(--color-blue-600);
+    outline-offset: 0.1875rem;
   }
 
   /* Visually Hidden - components */
-  .visualy-hidden {
+  .visually-hidden {
     display: inline-block;
     position: absolute;
 
@@ -299,11 +299,14 @@
    ============================================ */
 
 body {
+  color: var(--color-neutral-0);
+  background-color: var(--color-neutral-900);
+
   font-family: var(--font-sans);
   font-size: var(--font-size-base);
   line-height: var(--line-height-normal);
-  color: var(--color-neutral-0);
-  background-color: var(--color-neutral-900);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  overflow-x: hidden;
 }
